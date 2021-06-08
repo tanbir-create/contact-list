@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: aliceblue;
+}
+
+#page-heading{
+    text-align: center;
+    margin-top: 30px;
+    color: grey;
+    min-width: 23vw;
+}
+
+#contacts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    margin-left: 0;  
+
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+
+}
+
+
+.details {
+    position: relative;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+    box-shadow: 0 0 10px 3px lightgray;
+    width: 25vw;
+    min-width: 300px;
+}
+
+.details::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  transition: none;
+}
+
+.details:hover::after{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease-in-out;
+	
+}
+
+.details p {
+    color: aliceblue;
+    padding: 1px 5px 1px 10px;
+    margin-left: 10%;
+}
+
+.details i{
+    position: absolute;
+    top: 28%;
+    left: 3%;
+    font-size: 20px;
+    color:	silver;
+
+}
+
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+
+ 
+}
+#delete-container {
+    text-align: center;
+    background-color: lightgrey;
+    min-height: 50px;
+    height: inherit;
+    
+    min-width: 50px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 3px lightgray;
+
+}
+
+.delete-button a{
+    font-size: 1.5em;
+    color: #434343;
+}
+
+
+form{
+    width: 25vw;
+    min-width: 300px;
+    position: relative;
+
+    
+}
+
+input{
+    min-height: 25px;
+    width: 41%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: aliceblue;
+  
+    
+}
+input:focus{
+    
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+button{
+    
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2px;
+    width: 14%;
+    border: 2px solid rgba(67,67,67, .7);
+    
+    /* background-image: linear-gradient(to right, white , #000000) ; */
+    background-image: linear-gradient(150deg, #7f8c8d,#000000);
+    color: aliceblue;
+    padding: 6px 6px 2px 6px;
+    cursor: pointer;
+    transition: all 6s ease-in-out;
+    
+
+    
+}
+
+button:hover{
+    /* background-image: linear-gradient(to right white, white); */
+    background-image: linear-gradient(150deg, #434343,#000000);
+    
+    transition: all 6s ease-in-out;
+
+}
+
+
