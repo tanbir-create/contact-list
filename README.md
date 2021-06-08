@@ -7,7 +7,7 @@ Contact list using experss and mongoDB to store contacts
 
 run in node environment using
 
-npm install express
-npm install mongodb --save
-npm install mongoose
+npm install express, 
+npm install mongodb --save, 
+npm install mongoose, 
 npm install ejs
