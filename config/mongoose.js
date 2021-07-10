@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 //connect to database
-mongoose.connect('mongodb://localhost/contacts_list_db', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://tanbir-admin:legendaddy@cluster0.ok1p4.mongodb.net/test', { useNewUrlParser: true, useUnifiedTopology: true });
 
 //acquire the connection to check if successful
 const db = mongoose.connection;
