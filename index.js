@@ -5,7 +5,7 @@ const port = 8000;
 const db = require('./config/mongoose');
 const Contact = require('./models/contact')
 const app = express();
-
+app.use(cors());
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
