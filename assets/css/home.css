@@ -100,9 +100,18 @@ ul {
 
 }
 
-.delete-button a{
+
+.delete-button {
     font-size: 1.5em;
     color: #434343;
+    transition: transform .2s;
+}
+.delete-button a{
+    color: #434343;
+}
+
+.delete-button:hover{
+    transform: scale(1.2);
 }
 
 
